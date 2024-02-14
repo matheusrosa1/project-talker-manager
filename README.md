@@ -1,10 +1,7 @@
 # Projeto Talker Manager
 
-<details>
-<summary>Aplicação</summary>
+  Aplicação desenvolvida durante o curso de Desenvolvimento Full-Stack da Trybe 🚀
 
-  Aplicação desenvolvida durante o curso de Desenvolvimento Full-Stack da Trybe
-</details>
 <details>
   <summary>Objetivo da aplicação</summary>
 
@@ -13,6 +10,8 @@
 <details>
 <summary>Tecnologias utilizadas</summary>
   1. Docker
-  2. Express
+  2. Node.js
+  3. Express
+  4. JavaScript
   
 </details>
