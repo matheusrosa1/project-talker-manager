@@ -1,6 +1,6 @@
 # Projeto Talker Manager
 
-  Aplicação desenvolvida durante o curso de Desenvolvimento Full-Stack da Trybe 🚀
+  Aplicação de requisito e desenvolvida durante o curso de Desenvolvimento Full-Stack da Trybe 🚀. Módulo Back-end.
 
 
 ## Objetivo da aplicação
