@@ -29,3 +29,18 @@
   2. Node.js
   3. Express
   4. JavaScript
+
+## Instruções
+
+### Inicialização rápida com Docker
+
+```bash
+# em um terminal, inicie os containers
+docker-compose up -d
+
+# acesse o terminal do container inicie a aplicação
+docker exec -it project_talker_manager bash
+npm start
+# ou para iniciar com live-reload
+npm run dev
+```
