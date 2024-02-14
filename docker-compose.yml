@@ -12,23 +12,18 @@ services:
     ports:
       - 3001:3001
       - 9229:9229
-    environment:
-      PORT: 3001
-      MYSQL_HOSTNAME: db
-      MYSQL_PORT: 3306
-      MYSQL_USER: root
-      MYSQL_PASSWORD: password
-      MYSQL_DATABASE: TalkerDB
+    env_file:
+      - .env
 
   db:
     container_name: project_talker_manager_db
     image: mysql:8.0.32
     restart: always
     ports:
-      - 3306:3306
+      - ${MYSQL_PORT}:3306
     environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: TalkerDB
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD} # variável de ambiente do arquivo .env
+      MYSQL_DATABASE: ${MYSQL_DATABASE_NAME} # variável de ambiente do arquivo .env
     volumes:
       - ./seed.sql:/docker-entrypoint-initdb.d/seed.sql
 
