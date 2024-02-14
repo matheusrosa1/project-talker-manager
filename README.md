@@ -7,6 +7,7 @@
 ## Objetivo da aplicação
 
   Aplicação criada para cadastro de talkers (palestrantes) aplicando boas práticas de programação, como:
+  
   <br>
     - Código Limpo e Legível (Clean Code)
   </br><br>
