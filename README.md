@@ -23,10 +23,9 @@
   4. Editar os dados dos palestrantes
   5. Excluir informações
    
-## Tecnologias utilizadas
+## Principais Tecnologias utilizadas
 
   1. Docker
   2. Node.js
   3. Express
   4. JavaScript
-  5. mysql2
