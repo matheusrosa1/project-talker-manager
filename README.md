@@ -9,11 +9,9 @@
   Aplicação criada para cadastro de talkers (palestrantes) aplicando boas práticas de programação, como:
   <br>
     - Código Limpo e Legível (Clean Code)
-  </br>
-  <br>
+  </br><br>
     - Organização
-  </br>
-  <br>
+  </br><br>
     - Performance
   </br>
 
