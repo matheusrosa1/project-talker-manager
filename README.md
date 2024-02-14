@@ -10,8 +10,12 @@
   <br>
     - Código Limpo e Legível (Clean Code)
   </br>
+  <br>
     - Organização
+  </br>
+  <br>
     - Performance
+  </br>
 
 ## Funcionalidades
 
