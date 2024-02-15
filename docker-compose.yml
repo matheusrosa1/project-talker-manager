@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+  backend:
+    build: .
+    container_name: project_talker_manager
+    tty: true
+    stdin_open: true
+    restart: always
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 3001:3001
+      - 9229:9229
+    environment:
+      PORT: 3001
+      MYSQL_HOSTNAME: db
+      MYSQL_PORT: 3306
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: TalkerDB
+
+  db:
+    container_name: project_talker_manager_db
+    image: mysql:8.0.32
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: TalkerDB
+    volumes:
+      - ./seed.sql:/docker-entrypoint-initdb.d/seed.sql
+
+networks:
+  default:
+    name: talker_manager_net
