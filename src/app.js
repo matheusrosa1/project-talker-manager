@@ -19,11 +19,34 @@ const matchesWatchedDate = require('./utils/matchesWatchedDate');
 const validateQueryWatchedRate = require('./middlewares/validateQueryWatchedRate');
 const validatePatchRate = require('./middlewares/validatePatchRate');
 const validatePatchRateNumber = require('./middlewares/validatePatchRateNumber');
+const { findAll } = require('./db/talkerDB');
 
 const app = express();
 const PATH = path.resolve('src', 'talker.json');
 
 app.use(express.json());
+
+app.get('/talker/db', async (req, res) => {
+  try {
+    const [talkers] = await findAll();
+
+    if (!talkers) {
+      return res.status(200).json([]);
+    }
+    const formattedTalkers = talkers.map((talker) => ({
+      id: talker.id,
+      name: talker.name,
+      age: talker.age,
+      talk: {
+        watchedAt: talker.talk_watched_at,
+        rate: talker.talk_rate
+      }
+    }));
+    res.status(200).json(formattedTalkers)
+  } catch (error) {
+    res.status(500).json({ message: error.sqlMessage });
+  }
+})
 
 app.get('/talker', async (req, res) => {
   const talkers = await readJsonData(PATH);
