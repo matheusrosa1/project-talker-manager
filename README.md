@@ -30,10 +30,18 @@
   3. Express
   4. JavaScript
 
+## Banco de dados
+
+Neste projeto foi utilizado dois tipos de banco de dados:
+1. Arquivo .json
+2. Banco de dados SQL
+Ambos podem ser solicitados por diretórios localhost diferentes, estes referenciados no arquivo app.js
+
 ## Instruções
 
-### Inicialização rápida com Docker
+### Inicialização do projeto
 
+Para bom funcionamento do projeto e evitar problemas de compatibilidade neste projeto é recomendado utilizar o docker para inicilização do projeto, com as seguinte instruções:
 ```bash
 # em um terminal, inicie os containers
 docker-compose up -d
