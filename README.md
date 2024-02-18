@@ -44,6 +44,7 @@ Para acesso aos palestrantes cadastrados no banco de dados SQL utilizar a rota l
 ### Conexão com o banco de dados SQL
 
 As definições de conexão com o banco de dados SQL podem ser verificadas no arquivo docker-compose.yaml.
+<br>
 Como trata-se de um projeto demonstrativo, as portas de MYSQL User e MYSQL Password para acesso ao Data Base, estão informadas também no arquivo docker-compose.yaml.
 
 ## Instruções
