@@ -1,6 +1,7 @@
 # Projeto Talker Manager
 
   Aplicação de requisito obrigatório do curso de Desenvolvimento Full-Stack da Trybe. 🚀
+  <br>
   Módulo: Back-end.
 
 
