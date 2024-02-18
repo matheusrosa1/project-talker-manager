@@ -9,9 +9,9 @@
   Aplicação criada para cadastro de talkers (palestrantes) aplicando boas práticas de programação, como:
     <br>
     - Código Limpo e Legível (Clean Code)
-  </br><br>
+  <br>
     - Organização
-  </br><br>
+  <br>
     - Performance
   </br>
 
@@ -36,8 +36,8 @@ Neste projeto foi utilizado dois tipos de banco de dados:
 1. Arquivo .json
 2. Banco de dados SQL
 <br>
-Para acesso aos palestrantes cadastrados no arquivo .json utilizar a rota localhost:${port}/talker.`  `
-</br>
+Para acesso aos palestrantes cadastrados no arquivo .json utilizar a rota localhost:${port}/talker.
+<br>
 Para acesso aos palestrantes cadastrados no banco de dados SQL utilizar a rota localhost:${port}/talker/db
 
 
@@ -52,6 +52,7 @@ Como trata-se de um projeto demonstrativo, as portas de MYSQL User e MYSQL Passw
 ### Inicialização do projeto
 
 Para bom funcionamento do projeto e evitar problemas de compatibilidade, neste projeto é recomendado utilizar o docker para inicialização do projeto, com as seguinte instruções:
+<br>
 ```bash
 # em um terminal, inicie os containers
 docker-compose up -d
@@ -63,5 +64,6 @@ npm start
 npm run dev
 ```
 
-### Utilização do projeto
-Para 
+### Requisições
+
+Para requisições como cadastro, remoção e edição de palestantes pode-se utilizar o Thunder Client, Postman, Insomnia e similares.
