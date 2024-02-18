@@ -68,3 +68,7 @@ npm run dev
 ### Requisições
 
 Para requisições como cadastro, remoção e edição de palestantes pode-se utilizar o Thunder Client, Postman, Insomnia e similares.
+
+## Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
