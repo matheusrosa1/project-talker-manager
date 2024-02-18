@@ -37,8 +37,9 @@ Neste projeto foi utilizado dois tipos de banco de dados:
 2. Banco de dados SQL
 <br>
 Para acesso aos palestrantes cadastrados no arquivo .json utilizar a rota localhost:${port}/talker.`  `
-Para acesso aos palestrantes cadastrados no banco de dados SQL utilizar a rota localhost:${port}/talker/db
 </br>
+Para acesso aos palestrantes cadastrados no banco de dados SQL utilizar a rota localhost:${port}/talker/db
+
 
 ### Conexão com o banco de dados SQL
 
