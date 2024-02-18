@@ -35,7 +35,9 @@
 Neste projeto foi utilizado dois tipos de banco de dados:
 1. Arquivo .json
 2. Banco de dados SQL
+<br>
 Ambos podem ser solicitados por diretórios localhost diferentes, estes referenciados no arquivo app.js
+</br>
 
 ## Instruções
 
