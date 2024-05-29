@@ -72,3 +72,8 @@ Para requisições como cadastro, remoção e edição de palestantes pode-se ut
 ## Licença
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
+
+## Contato
+
+- Linkedin: https://www.linkedin.com/in/matheus-rosa-2a0652201/
+- E-mail: matheusrosa.dev@gmail.com
